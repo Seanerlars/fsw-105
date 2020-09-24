@@ -1,17 +1,6 @@
-//String
-var name = "Frank"
-console.log(name)
-
-//Number
-var age = 54
-console.log(age)
-
-//Boolean
-var isHealthy = false
-console.log(isHealthy)
 
 //Function
-var person = {
+var shopper = {
     firstName: "Frank",
     lastName: "Reynolds",
     age: 54,
@@ -22,7 +11,7 @@ var person = {
         return this.firstName + "" + this.lastName + "" + this.id;
     }   
 };
-console.log(person)
+console.log(shopper.nameId())
 
 
 
