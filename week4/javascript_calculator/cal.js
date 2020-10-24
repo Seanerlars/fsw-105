@@ -1,10 +1,11 @@
 var readlineSync= require("readline-sync");
 
 var firstNum = readlineSync.question("Enter the first number:");
-var secondNum = readlineSync.question("Enter the first number:");
+var secondNum = readlineSync.question("Enter the second number:");
 var selectedOperator = readlineSync.question("Would you like to: add/sub/mul/div? ");
 
-function addTwoNumbers(num1, num2){
+
+function addTwoNumbers (num1, num2){
     return 'Addition Outcome = ' + (num1 + num2);
 }
 
