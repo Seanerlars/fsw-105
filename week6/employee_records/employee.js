@@ -1,6 +1,6 @@
-var employees = [ "Daren", "John"]
+var employees = [ ]
 
-function Worker(name, jobTitle, salary, status){
+function Worker(name, jobTitle, salary, status = "full time"){
     this.name = name
     this.jobTitle = jobTitle
     this.salary = salary
@@ -11,10 +11,12 @@ function Worker(name, jobTitle, salary, status){
      console.log(" Name : " + this.name + " Job :" + this.jobTitle + " Salary : " + this.salary + " Status :" + this.status)
  }
 
-   
+ 
+ Worker.prototype.status = "part time"
    
 
 let person1 = new Worker("Sam", "Human Resources", "$55,000", "full time");
+person1.status = "part time"
 console.log(person1);
 
 
